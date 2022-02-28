@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="stylesheet" href="./assets/css/style.css"
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
-<body>
-    <header>
-        <h2 id="header">Weather Dashboard</h2>
-    </header>
-    <aside id="search">
-        <h3>Search for a city:</h3>
-    </aside>
-    <main>
 
-    </main>
+<body>
+    <header class="header">
+        <h2>Weather Dashboard</h2>
+    </header>
+    <div class="col-">
+        <aside id="search" class="col-2">
+            <h3>Search for a city:</h3>
+            <input id="city-name" placeholder="Enter a city">
+            <button id="btn">Search</button>
+            <div class="history"></div>
+        </aside>
+        <main class="col-10">
+            <div class="today">
+                <h4 class="city-date"></h4>
+                <p id="today-temp">Temp:</p>
+                <p id="today-wind">Wind:</p>
+                <p id="today-Humidity">Humidity:</p>
+                <p id="today-UV">UV Index:</p>
+            </div>
+            <div class="col- 5-day">
+                <div class="col-2 card">
+                    <h4 class="future-date"></h4>
+                    <p id="future-temp">Temp:</p>
+                    <p id="future-wind">Wind:</p>
+                    <p id="future-Humidity">Humidity:</p>
+                    <p id="future-UV">UV Index:</p>
+                </div>
+                <div class="col-2 card">
+                    <h4 class="future-date"></h4>
+                    <p id="future-temp">Temp:</p>
+                    <p id="future-wind">Wind:</p>
+                    <p id="future-Humidity">Humidity:</p>
+                    <p id="future-UV">UV Index:</p>
+                </div>
+                <div class="col-2 card">
+                    <h4 class="future-date"></h4>
+                    <p id="future-temp">Temp:</p>
+                    <p id="future-wind">Wind:</p>
+                    <p id="future-Humidity">Humidity:</p>
+                    <p id="future-UV">UV Index:</p>
+                </div>
+                <div class="col-2 card">
+                    <h4 class="future-date"></h4>
+                    <p id="future-temp">Temp:</p>
+                    <p id="future-wind">Wind:</p>
+                    <p id="future-Humidity">Humidity:</p>
+                    <p id="future-UV">UV Index:</p>
+                </div>
+                <div class="col-2 card">
+                    <h4 class="future-date"></h4>
+                    <p id="future-temp">Temp:</p>
+                    <p id="future-wind">Wind:</p>
+                    <p id="future-Humidity">Humidity:</p>
+                    <p id="future-UV">UV Index:</p>
+                </div>
+            </div>
+        </main>
+
+        </main>
+    </div>  
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
